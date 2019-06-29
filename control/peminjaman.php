@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: FEGGY
- * Date: 4/2/2019
- * Time: 2:01 PM
- */
-
 include_once '../config/koneksi.php';
 $response = array();
 

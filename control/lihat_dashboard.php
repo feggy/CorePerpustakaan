@@ -25,10 +25,10 @@ $num_rows_anggota = mysqli_num_rows($exequery_anggota);
 $exequery_buku = mysqli_query($koneksi, selectall("buku"));
 $num_rows_buku = mysqli_num_rows($exequery_buku);
 
-$exequery_sedangpinjam = mysqli_query($koneksi, selectallpeminjaman("Sedang dipinjam"));
+$exequery_sedangpinjam = mysqli_query($koneksi, selectallpeminjaman("Proses"));
 $num_rows_sedangpinjam = mysqli_num_rows($exequery_sedangpinjam);
 
-$exequery_sudahdikembalian = mysqli_query($koneksi, selectallpeminjaman("Sudah dikembalikan"));
+$exequery_sudahdikembalian = mysqli_query($koneksi, selectallpeminjaman("Selesai"));
 $num_rows_sudahdikembalian = mysqli_num_rows($exequery_sudahdikembalian);
 
 $response['anggota'] = $num_rows_anggota;
